@@ -112,32 +112,17 @@ pre {
 code {
     display: inline-block;
 }
+  
 blockquote {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 2.5em 0;
-    padding: 0 0 0 50px;
-    color: #555;
-    border-left: none;
+    margin: 1.1em 0;
+    padding: 1.5em 2em .5em 2em;
+    border: 1px dashed #ddd;
+    border-left: 0.5em solid #ddd;
+    line-height: 1.5;
+    box-shadow: 3px 3px 0 #eaeaea;
 }
-blockquote::before{
-    content: "\201C";
-    display: block;
-    font-family: times;
-    font-style: normal;
-    font-size: 48px;
-    color: #444;
-    font-weight: bold;
-    line-height: 30px;
-    margin-left: -50px;
-    position: absolute; 
-}
-  
+
 /**
 h1, h2, h3 {
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
