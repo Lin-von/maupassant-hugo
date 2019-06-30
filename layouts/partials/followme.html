@@ -1,0 +1,10 @@
+{{ with .Site.Params.followme }}
+<section >
+    <ul class="follow-list">
+        <h3>Follow Me On</h3>
+        {{ range . }}
+        <a class="icon-{{ .name }}-fill iconfont" href="{{ .url }}" title="{{ .title }}"></a>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

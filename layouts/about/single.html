@@ -1,0 +1,32 @@
+{{ partial "head" . }}
+<body>
+{{ partial "header" . }}
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-16" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">{{ .Title }}</h1>
+                        </header>
+
+                        <div class="post-about">
+                            {{ .Content }}
+                        </div>
+                        {{ partial "followme" .}}
+
+
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{{ partial "footer" . }}
+</body>
+</html>

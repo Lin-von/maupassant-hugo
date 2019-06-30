@@ -5,16 +5,18 @@
  * @version 1.3
  * @link http://pickcho.com
  */
- @font-face {
-    font-family: 'icomoon';
-    src:url('fonts/icomoon.woff?-i5ysuu') format('woff'),
-        url('fonts/icomoon.ttf?-i5ysuu') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont/iconfont.eot');
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont/iconfont.woff2') format('woff2'),
+    url('iconfont/iconfont.woff') format('woff'),
+    url('iconfont/iconfont.ttf') format('truetype'),
+    url('iconfont/iconfont.svg#iconfont') format('svg');
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon';
+    font-family: 'iconfont';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -27,44 +29,176 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 40px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .icon-search:before {
     content: "\e601";
 }
-.icon-air:before {
-    content: "\e602";
+
+.icon-facebook-line:before {
+    content: "\e766";
 }
-.icon-rss:before {
-    content: "\e603";
+
+.icon-facebook-box-line:before {
+    content: "\e767";
 }
-.icon-list:before {
-    content: "\e604";
+
+.icon-facebook-fill:before {
+    content: "\e768";
 }
-.icon-cc-by:before {
-    content: "\e605";
+
+.icon-facebook-box-fill:before {
+    content: "\e769";
 }
-.icon-cc-nc:before {
-    content: "\e606";
+
+.icon-google-fill:before {
+    content: "\e76a";
 }
-.icon-cc-sa:before {
-    content: "\e607";
+
+.icon-google-line:before {
+    content: "\e76b";
 }
-.icon-github:before {
-    content: "\e608";
+
+.icon-github-line:before {
+    content: "\e76c";
 }
-.icon-twitter:before {
-    content: "\e609";
+
+.icon-instagram-fill:before {
+    content: "\e76d";
 }
-.icon-googleplus:before {
-    content: "\e60a";
+
+.icon-github-fill:before {
+    content: "\e76e";
 }
-.icon-qq:before {
-    content: "\e60b";
+
+.icon-linkedin-fill:before {
+    content: "\e76f";
 }
-.icon-instagram:before {
-    content: "\e60c";
+
+.icon-line-line:before {
+    content: "\e770";
 }
-.icon-sina-weibo:before {
-    content: "\e60d";
+
+.icon-linkedin-box-fill:before {
+    content: "\e771";
+}
+
+.icon-linkedin-line:before {
+    content: "\e772";
+}
+
+.icon-linkedin-box-line:before {
+    content: "\e773";
+}
+
+.icon-line-fill:before {
+    content: "\e774";
+}
+
+.icon-instagram-line:before {
+    content: "\e775";
+}
+
+.icon-skype-fill:before {
+    content: "\e776";
+}
+
+.icon-skype-line:before {
+    content: "\e777";
+}
+
+.icon-qq-fill:before {
+    content: "\e778";
+}
+
+.icon-stack-overflow-fill:before {
+    content: "\e779";
+}
+
+.icon-telegram-line:before {
+    content: "\e77a";
+}
+
+.icon-snapchat-line:before {
+    content: "\e77b";
+}
+
+.icon-stack-overflow-line:before {
+    content: "\e77c";
+}
+
+.icon-snapchat-fill:before {
+    content: "\e77d";
+}
+
+.icon-tumblr-line:before {
+    content: "\e77e";
+}
+
+.icon-twitter-line:before {
+    content: "\e77f";
+}
+
+.icon-telegram-fill:before {
+    content: "\e780";
+}
+
+.icon-wechat-fill:before {
+    content: "\e781";
+}
+
+.icon-tumblr-fill:before {
+    content: "\e782";
+}
+
+.icon-twitter-fill:before {
+    content: "\e783";
+}
+
+.icon-wechat-line:before {
+    content: "\e784";
+}
+
+.icon-weibo-line:before {
+    content: "\e785";
+}
+
+.icon-youtube-fill:before {
+    content: "\e786";
+}
+
+.icon-youtube-line:before {
+    content: "\e787";
+}
+
+.icon-whatsapp-line:before {
+    content: "\e788";
+}
+
+.icon-weibo-fill:before {
+    content: "\e789";
+}
+
+.icon-zhihu-line:before {
+    content: "\e78a";
+}
+
+.icon-zhihu-fill:before {
+    content: "\e78b";
+}
+
+.icon-whatsapp-fill:before {
+    content: "\e78c";
+}
+
+.icon-qq-line:before {
+    content: "\e78d";
 }
 body {
     background-color:#FFF;
@@ -178,7 +312,7 @@ textarea {
     /**
     font:bold 42px/1.12 "Times New Roman", Georgia, Times, sans-serif;
     **/
-    font-size: 37.5px;
+    font-size: 40px;
     font-weight: bold;
     color:#555;
 }
@@ -241,11 +375,14 @@ textarea {
 .col-8 {
     width:800px;
 }
-.col-12{
-    width: 100%;
+.col-12 {
+    width:1200px;
+}
+.col-16{
+    width:100%;
 }
 .container {
-    width:1150px;
+    width:1500px;
     padding:0 60px;
     margin:0 auto;
 }
@@ -270,7 +407,7 @@ textarea {
     color:#555;
     text-align:left;
     /**font:bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;**/
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 .post-title a, .keyword {
@@ -383,7 +520,7 @@ textarea {
     overflow: auto;
     padding: .5em 2.4em;
     border-radius: 3px;
-    margin:1.8em 0;
+    margin: 0;
 }
 .post-content ul li{
     text-indent: .5em;
@@ -620,7 +757,7 @@ textarea.textarea {
 }
 .post-content hr, .comment-content hr {
     margin:2.1em auto;
-    width:200px;
+    width:20%;
     border:1px solid #ccc;
     border-width:1px 0 0 0;
     position: relative;
@@ -891,18 +1028,45 @@ img.alignright {
 
 /* for archive page starts*/
 .post-archive {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 2;
     padding-bottom: .8em; 
-}
+}©
 .post-archive h2 {
       margin: 0;
-      font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; 
+      font: bold 30px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
 }
 .post-archive .date {
       padding-right: .7em; 
 }
 /* for archive page ends*/
+
+/* for about page starts*/
+.post-about {
+    text-align: center;
+    font-size: 1em;
+    color:#444;
+}
+
+.post-about h2 {
+    color: #bf6c6c;
+}
+
+.post-about hr {
+    width:10%;
+    border:1px solid #ccc;
+    border-width:1px 0 0 0;
+    position: relative;
+}
+.follow-list {
+    text-align: center;
+    margin-top: 100px;
+    padding: 0;
+}
+.follow-list a {
+    color: black;
+}
+/* for about page ends*/
 
 /* back-to-top rocket*/
 @media print, screen and (min-width: 48em) {
