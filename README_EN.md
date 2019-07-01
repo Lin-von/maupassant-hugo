@@ -1,7 +1,7 @@
 # Maupassant
 Maupassant theme, ported to Hugo.
 
-1. Preview: Linvon's Blog](http://www.linvon.cn)
+1. Preview: [Linvon's Blog](http://www.linvon.cn)
 2. [中文文档](README.md)
 
 A simple Hugo template with great performance on different devices, ported from a Typecho theme by [Cho](https://github.com/pagecho/maupassant/), forked and modified from [rujews/maupassant-hugo](https://github.com/rujews/maupassant-hugo)，changed some styles.
